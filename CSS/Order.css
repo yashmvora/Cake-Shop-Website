@@ -1,0 +1,280 @@
+.bod{
+    background-image:url("../Images/backgnd.jpg");
+    background-size: contain;
+    width: 90%;
+    padding: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header{
+    margin-bottom: 20px;
+}
+
+.image {
+    animation-name: image;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    position: relative;
+    color: #000000c5;
+}
+
+@keyframes image{
+    0% {transform: rotate(0deg); margin-left: 150px;}
+    20% {transform: rotate(0deg); margin-left: 300px;}
+    40% {transform: rotate(0deg); margin-left: 450px;}
+    60% {transform: rotate(0deg); margin-left: 600px;}
+    80% {transform: rotate(0deg);margin-left: 750px;}
+    100% {transform: rotate(0deg); margin-left: 800px;}
+}
+
+.centertext {
+    position: absolute;
+    top: 25%;
+    transform: rotate(330deg);
+}
+
+.dropbtn {
+    background-color:rgb(201, 201, 201);
+    color: white;
+    padding: 0px;
+    border: none;
+}
+
+.navigation {
+    float: left;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10%;
+}
+
+.navigation-content {
+    display: none;
+    position: absolute;
+    background-color:#ccc;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.navigation-content a {
+    color: rgb(0, 0, 0);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.navigation-content a:hover {background-color: #eaeaea;}
+
+.navigation:hover .navigation-content {display: block;}
+
+.navigation:hover .dropbtn {background-color: #eaeaea;}
+
+input[type=text] {
+    border: none;
+    width: 100%;
+    border-bottom: 2px solid black;
+    padding: 12px 20px 12px 20px;
+}
+
+.radiocont{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 25px;
+    font-size: 30px;
+    font-family: cursive;
+    font-weight: bold;
+    padding-left: 23%;
+}
+.radiocont input{
+    display: none;
+}
+.radiocont .circle{
+    display: inline-block;
+    width: 15px;
+    align-self: center;
+    height: 15px;
+    border: 5px solid rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+    border-radius: 50%
+}
+.radiocont input:checked + .circle{
+    background-color: rgb(19, 53, 245);
+}
+
+.orderbox {
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    width: 90%;
+}
+#foot{
+    font-weight: bold;
+}
+#form{
+    background-color: rgba(238, 238, 238, 0.712);
+}
+
+fieldset {
+    border-radius: 8px;
+    font-style: italic;
+    font-size: 22px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#orderinfo {
+    text-align: left;
+    display: initial;
+    font-size: 40px;
+    font-family: fantasy;
+    table-layout: auto;
+    padding: 8px;
+}
+
+.images{
+    clear: both;
+    margin-top: 7%;
+    margin-bottom: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(238, 238, 238, 0.712);
+    width: 90%;
+    height: auto;
+    text-align: center;
+    padding: 6%;
+    border: 5px dotted black;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#imtext{
+    font-family: cursive;
+    font-size: 70px;
+    letter-spacing: 3px;
+    text-decoration: underline;
+}
+
+.imgmenu img{
+    width: 30%;
+    height: 40%;
+    box-sizing: border-box;
+    margin: 1%;
+    border: 5px solid rgb(236, 255, 62);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.imgtext{
+    font-family: fantasy;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.tab{
+    clear: both;
+    text-align: center;
+    font-family: cursive;
+    border: 1px solid black;
+    font-weight: bold;
+    font-size: 40px;
+    border-radius: 20px;
+    background-color: rgba(238, 238, 238, 0.712);
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#quantity{
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+
+#quantity td {  
+    padding: 30px;
+    background-color: rgba(49, 49, 49, 0.062);
+    font-size: 30px;
+    border: 1px solid black;
+    color: rgb(34, 34, 34);
+}
+#quantity tr:nth-child(even){background-color: rgba(153, 153, 153, 0.24);}
+
+#quantity th {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(49, 49, 49, 0.062);
+    border: 1px solid black;
+    color: rgb(34, 34, 34);
+}
+
+.prtbut{
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+input[type=submit]{
+    padding: 15px 60px;
+    font-size: 30px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    border-radius: 3%;
+    transition: background-color 1s;
+    border: 2px solid rgb(0, 0, 0);
+    background-color:#eaeaea;
+}
+input[type=submit]:hover {
+    background-color: aqua;
+}
+
+.footer {
+    clear: both;
+    border-radius: 25px;
+    margin-top: 10%;
+    border: 2px solid #73AD21;
+    background-color:rgba(238, 238, 238, 0.712);
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.footer a:visited{color: blue;}
+
+#ftext{
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    letter-spacing: 4px;
+    word-spacing: 4px;
+}
+#flink{
+    width:100%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    word-spacing: 100px;
+}
+
+.er_block{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(255, 0, 0);
+    font-weight: bolder;
+    border: 2px solid rgb(0, 0, 0);
+    margin-top: 0px;
+    padding-top:0px; 
+    position: fixed;
+    margin-left:400px;
+    background-color:rgb(229, 255, 0);
+    z-index:100;
+}

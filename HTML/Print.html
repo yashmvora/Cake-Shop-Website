@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>CITY CAKE</title>
+        <meta charset="UTF-8">
+        <meta name="author"content="YASH">
+        <meta name="description"content="City Cake Shop">
+        <meta name="keywords"content="CityU,Cake,Shop">
+        <link rel="stylesheet" href="../CSS/Print.css">
+    </head>
+    <body>
+        <div class="bod">
+            <div id="header">
+                <div class="image">
+                    <img src="../Images/logo.png" width="220" height="220" alt="logo"><br>
+                    <div class="centertext"><h1>CITYU'S CAKE</h1></div>        
+                </div>
+            </div>
+        
+            <div class="navigation">
+                <button class="dropbtn"><img src="../Images/viewlist.png" width="80" height="80" alt="viewlist"></button>
+                    <div class="navigation-content">
+                        <a href="Home.html">Home</a>
+                        <a href="Order.html">Order</a>
+                        <a href="About Us.html">About Us</a>
+                        <a href=".navigation">Terms of Use</a>
+                    </div>
+            </div>
+            <br>        
+            <div class="printblock">
+                <div class="orderbox">
+                    <form>
+                        <fieldset>
+                        <div id="orderinfo">
+                            <h2>Invoice</h2>
+                        
+                            <p id="txt"><span id="tet">Telephone No. - </span> <span id="telp"></span></p>
+                       
+                            <p id="txt"><span id="tet">Pick Up Date - </span> <span id="pickp"></span></p>
+                            
+                            <label class="radiocont">
+                            <input id="delbutton" type="radio" name="method" value="delivery">Delivery  
+                            <span class="circle"></span>
+                            </label>
+
+                            <label class="radiocont">
+                            <input id="pickbutton" type="radio" name="method" value="pickup">Pick-Up   
+                            <span class="circle"> </span>
+                            </label>
+                        </div>
+                        </fieldset>
+                    </form> 
+                </div>
+                <p id="ordtext">Order No :- <span id="odno"></span></p>
+                <table id="printtable">
+                    <tr>
+                        <th>Cake Description</th>
+                        <th>Qty</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr id="foot">
+                        <td>Total</td>
+                        <td id="totqty"></td>
+                        <td id="totprice"></td>
+                    </tr>
+                </table>
+                <input type="button" class="but" value="Clear Invoice" onclick="clrdata();">
+            </div>
+
+        <div class="footer">
+                <p id="ftext">CityU 2017 sources of images and text from Wikipedia & courtesy of all-free-download.com</p>      
+                <p id="flink"><a href="Home.html">Home</a>
+                <a href="Order.html">Order</a>
+                <a href="About Us.html">About-Us</a>
+                <a href=".footer">Terms-of-Use</a></p>
+            </div>
+        <script type="text/javascript" src="../JS/cakemenu.js"></script>
+        <script type="text/javascript" src="../JS/Print.js"></script>
+    </body>
+</html>

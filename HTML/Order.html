@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title>CITY CAKE</title>
+        <meta charset="UTF-8">
+        <meta name="author"content="YASH">
+        <meta name="description"content="City Cake Shop">
+        <meta name="keywords"content="CityU,Cake,Shop">
+        <link rel="stylesheet" href="../CSS/Order.css">
+    </head>
+        <body>
+            <div class="er_block"></div>
+            <div class="clickGo">
+            <div class="bod">
+                <div id="header">
+                    <div class="image">
+                        <img src="../Images/logo.png" width="220" height="220" alt="logo"><br>
+                        <div class="centertext"><h1>CITYU'S CAKE</h1></div>        
+                    </div>
+                </div>
+
+                <div class="navigation">
+                    <button class="dropbtn"><img src="../Images/viewlist.png" width="80" height="80" alt="viewlist"></button>
+                        <div class="navigation-content">
+                            <a href="Home.html">Home</a>
+                            <a href="Order.html" onclick="dataclr();">Order</a>
+                            <a href="About Us.html">About Us</a>
+                            <a href=".navigation">Terms of Use</a>
+                        </div>
+                </div>
+                
+                    <div class="orderbox">
+                        <form id="form" action="Print.html" method="get" onchange="changePhone()">
+                            <fieldset>
+                                <h1>Order Information</h1>
+                            <div id="orderinfo">
+                                Telephone No : <input class="teleno" type="text" name="number" >
+                           
+                                Date of delivery : <input class="datedel" type="text" name="date">
+                                <label class="radiocont">
+                                <input type="radio" name="method" value="delivery" id="delbutton">Delivery  
+                                <span class="circle"></span>
+                                </label>
+    
+                                <label class="radiocont">
+                                <input type="radio" name="method" value="pickup" id="pickbutton">Pick-Up   
+                                <span class="circle"> </span>
+                                </label>
+                            </div>
+                            </fieldset>
+                    </div>
+
+                    <div class="images">
+                        <p id="imtext">MENU</p>
+                        <div class="imgmenu"></div>
+                    </div>
+
+                    <div class="tab">
+                        <p>Order No. <span id="ordno"></span></p>
+                        
+                        <table id="quantity">
+                            <tr>
+                                <th><b>Cake name</b></th>
+                                <th>Qty</th>
+                            </tr>
+                            <tr id="foot">
+                                <td>Total</td>
+                                <td class="totalofcakes"></td>
+                            </tr>
+                        </table>           
+                    
+                        <div class="prtbut">
+                        <div class="prtbutton">
+                            <input type="submit" value="Print Invoice">
+                        </div>
+                    </form>
+                        </div>
+                    </div>
+    <div class="footer">
+        <p id="ftext">CityU 2017 sources of images and text from Wikipedia & courtesy of all-free-download.com</p>      
+        <p id="flink"><a href="Home.html">Home</a>
+        <a href="Order.html" onclick="dataclr();">Order</a>
+        <a href="About Us.html">About-Us</a>
+        <a href=".footer">Terms-of-Use</a></p>
+    </div>
+    </div>
+    </div>
+    <script type="text/javascript" src="../JS/cakemenu.js"></script>
+    <script type="text/javascript" src="../JS/Order.js"></script>
+    </body>
+</html>
